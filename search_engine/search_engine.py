@@ -19,6 +19,6 @@ def search(docs, query):
 
     sorted_result = sorted(
         result,
-        key=lambda i: (i['relevance']['count']),
+        key=lambda i: (i['relevance']['match'], i['relevance']['count']),
         reverse=True)
     return [item['id'] for item in sorted_result]
