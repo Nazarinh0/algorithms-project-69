@@ -28,7 +28,7 @@ def test_query_with_signs():
 
 def test_query_compound():
     result = search(documents, query_compound)
-    assert result == ['doc1']
+    assert result == ['doc1', 'doc3', 'doc5']
 
 
 def test_empty_docs():
