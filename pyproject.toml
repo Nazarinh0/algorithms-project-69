@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "algorithms-project-69"
+version = "0.1.0"
+description = ""
+authors = ["Nazar Annakhalov <nazar.annahalov@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "search_engine"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
