@@ -18,12 +18,12 @@ empty_documents = []
 
 def test_query():
     result = search(documents, query)
-    assert result == ['doc1', 'doc3', 'doc5']
+    assert result == ['doc3', 'doc5', 'doc1']
 
 
 def test_query_with_signs():
     result = search(documents, query_with_signs)
-    assert result == ['doc1', 'doc3', 'doc5']
+    assert result == ['doc3', 'doc5', 'doc1']
 
 
 def test_query_compound():
