@@ -8,6 +8,8 @@ def search(docs, query):
     for doc in docs:
         all_terms = re.findall(r'\w+', doc['text'])
         if query_term in all_terms:
-            result.append(doc['id'])
+            relevance = all_terms.count(query_term)
+            result.append({'id': doc['id'], 'relevance': relevance})
 
-    return result
+    sorted_result = sorted(result, key=lambda i: i['relevance'], reverse=True)
+    return [item['id'] for item in sorted_result]
