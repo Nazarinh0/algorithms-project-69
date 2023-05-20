@@ -4,8 +4,8 @@ install:
 lint:
 	poetry run flake8 search_engine
 
-tests:
+test:
 	poetry run pytest
 
-coverage:
-	poetry run pytest --cov=search_engine tests/ --cov-report xml
+test-coverage:
+	poetry run pytest --cov=search_engine --cov-report=xml
