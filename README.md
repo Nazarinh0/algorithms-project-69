@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Nazarinh0/algorithms-project-69/workflows/hexlet-check/badge.svg)](https://github.com/Nazarinh0/algorithms-project-69/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d6535725cdca173cbec1/maintainability)](https://codeclimate.com/github/Nazarinh0/algorithms-project-69/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d6535725cdca173cbec1/test_coverage)](https://codeclimate.com/github/Nazarinh0/algorithms-project-69/test_coverage)
 
 # Search Engine Project
 The Internet is hard to imagine without search engines. To make them work effectively, different search engines are used. In this project, we will write our own implementation of a search engine.
